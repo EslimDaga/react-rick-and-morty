@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <div className="bg-[#E5E5E5]">
+    <main className="flex-1 overflow-y-auto px-4 py-4 bg-gray-100 dark:bg-gray-800">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mx-4 my-4">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
           <div
@@ -31,7 +31,7 @@ const App = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 
