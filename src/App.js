@@ -1,12 +1,15 @@
-import CardItem from "./components/CardItem";
+import { Route, Routes } from "react-router-dom";
+import Characters from "./views/Characters";
+import Episodes from "./views/Episodes";
+import Locations from "./views/Locations";
 
 const App = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mx-4 my-4">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-          <CardItem i={i} />
-        ))}
-    </div>
+    <Routes>
+      <Route path="/" element={<Characters />} />
+      <Route path="/" element={<Locations />} />
+      <Route path="/" element={<Episodes />} />
+    </Routes>
   );
 }
 
