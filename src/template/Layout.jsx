@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
   return (
     <PokeApp>
       <Header />
-      { children }
+      <main className="flex-1 overflow-y-auto px-4 py-4 bg-gray-100 dark:bg-gray-800">
+        { children }
+      </main>
     </PokeApp>
   )
 }
